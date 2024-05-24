@@ -8,6 +8,8 @@ function Get-PhisherMessage {
         .PARAMETER id
             This is the GUID assigned to the message by PhishER.
             This value may need to retrieved programatically.
+        .EXAMPLE
+            PS> Get-PhisherMessage -token 'your_api_token' -id 'phiser_message_guid'
     #>
     param (
         [Parameter(Mandatory=$true)]

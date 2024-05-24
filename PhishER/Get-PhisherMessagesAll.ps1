@@ -10,6 +10,12 @@ function Get-PhisherMessagesAll {
             The page number you want to receive (default is 1).
         .PARAMETER luceneQuery
             A Lucene query string (default is ‘category:threat OR category:spam’).
+        .EXAMPLE
+            PS> Get-PhisherMessagesAll -token 'your_phisher_token'
+        .EXAMPLE
+            PS> Get-PhisherMessagesAll -token 'your_phisher_token' -page 2
+        .Example
+            PS> Get-PhisherMessagesAll -token 'your_phisher_token' -luceneQuery 'category:unknown'
     #>
 
     param (
